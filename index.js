@@ -13,7 +13,7 @@ app.use("/", express.static("./images"));
 
 app.use(fileUpload());
 
-require("http").createServer((_, res) => res.end("Hello, World!")).listen(3000);
+//require("http").createServer((_, res) => res.end("Hello, World!")).listen(3000);
 
 app.post("/upload", (req, res) => {
     res.setHeader("Content-Type", "application/json");
